@@ -5,7 +5,8 @@ body{
 	width: 100%;
 	height: auto;
 	margin: 0;
-	background: linear-gradient(141deg, #77b9c9 0%, #a1d6e3 51%, #ffffff 75%);
+	background: #16191c;
+	
 }
 header{
 	margin-left: 0%;
@@ -32,6 +33,7 @@ header div{
 	font-size: 4em;
 	transition: 0.5s;
 }
+
 img{
 	width: 10%;
 	height: auto;
@@ -48,7 +50,7 @@ nav{
 }
 nav a{
 	margin-left: 3%;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	padding: 2%;
 	display: inline;
 	text-decoration: none;
@@ -60,6 +62,11 @@ a:hover{
 i{
 	padding: 1%;
 }
+ul{
+  padding-left: 1%;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.3em;
+}
 #resumen{
 	margin-top: 10%;
 	background-image: url("inicio.webp");
@@ -70,30 +77,43 @@ i{
 	background-size: cover;
 	background-attachment: fixed;
 	clear: both;
+	padding-bottom: 15%;
+	padding-top: 10%;
 }
 #acerca{
+  padding-top: 5%;
 	color: white;
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
 }
 #acerca h1{
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	text-align: center;
 }
 #acerca p{
 	padding-left: 1%;
-	font-family: "Alegreya Sans SC", sans-serif;
-	font-size: 1.5em;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.25em;
 }
 .titulo{
 	padding-top: 10%;
 	width: 100%;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	text-align: center;
 	color: white;
 	font-size: 4em;
 	font-weight: bold;
+}
+#fig1{
+  width: 35%;
+  height: auto;
+}
+.caption{
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.25em;
+	color: white;
 }
 #fondoexp{
 	background-image: url("Experiencia1.webp");
@@ -135,7 +155,7 @@ i{
 	clear: both;
 }	
 .exp h2{
-	font-family: "Alegreya Sans SC", sans-serif !important;
+	font-family: "Roboto", sans-serif !important;
 	text-align: left;
 	padding-left: 1%;
 	width: 90%;
@@ -143,7 +163,7 @@ i{
 	
 }
 .exp h3{
-	font-family: "Alegreya Sans SC", sans-serif !important;
+	font-family: "Roboto", sans-serif !important;
 	padding-left: 1%;
 	width: 90%;
 	color: white;
@@ -157,23 +177,42 @@ i{
 	width: 10%;
 }
 .contraste{
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: #2f3942;
 	z-index: -1;
 	width: 100%;
-	padding-bottom: 30%;
+	padding-bottom: 15%;
 	padding-top: 10%;
 }	
 #exp0{
-	background-image: url("exp0.webp");
+  margin-top: 2%;
+  margin-bottom: 10%;
+	background-image: url("fig1.jpg");
+	padding: 25%;
 }
 #exp1{
-	background-image: url("exp1.webp");
+	  margin-top: 2%;
+  margin-bottom: 10%;
+	background-image: url("fig2.png");
+	padding: 25%;
 }
 #exp2{
-	background-image: url("exp2.webp");
+		  margin-top: 2%;
+  margin-bottom: 10%;
+	background-image: url("fig3.png");
+	padding: 25%;
 }
 #exp3{
-	background-image: url("foto TKD.webp");
+		  margin-top: 2%;
+  margin-bottom: 10%;
+	background-image: url("fig4.png");
+	padding: 25%;
+}
+
+#exp4{
+		  margin-top: 2%;
+  margin-bottom: 10%;
+	background-image: url("fig5.png");
+	padding: 25%;
 }
 .imagenes{
 	width: 25%;
@@ -184,7 +223,7 @@ i{
 }
 .texto{
 	text-align: center;
-	font-family: "Alegreya Sans SC", sans-serif !important;
+	font-family: "Roboto", sans-serif !important;
 }
 #analisis{
 	background-image: url("equipamiento.webp");
@@ -203,7 +242,7 @@ i{
 #titulo1{
 	margin-top: 10%;
 	margin-bottom: 10%;
-	font-family: "Alegreya Sans SC", sans-serif !important;
+	font-family: "Roboto", sans-serif !important;
 	font-size: 2.5em;
 	text-align: center;
 }	
@@ -220,7 +259,7 @@ i{
 }
 
 .exp p{
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.5em;
 	padding: 0.5%;
 	color: white;
@@ -243,7 +282,7 @@ i{
 }
 #lic h2{
 	text-align: center;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 #licenciatura{
 	margin-top: 15%;
@@ -264,7 +303,7 @@ i{
 	display: block;
 	overflow: hidden;
 	transition: 0.5s;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	max-height: 0;
 }
 
@@ -282,13 +321,13 @@ i{
 }
 #doc h2{
 	text-align: center;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 #cont2{
 	display: block;
 	overflow: hidden;
 	transition: 0.5s;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	max-height: 0;
 }
 
@@ -325,13 +364,13 @@ i{
 	float: left;
 	width: 40%;
 	margin-left: 5%;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	margin-top: 10%;
 	text-align: center;
 	margin-bottom: 5%;
 }	
 .lengua h2{
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	text-align: center;
 }
 .info{
@@ -339,12 +378,12 @@ i{
 	float: left;
 	width: 40%;
 	margin-left: 10%;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	margin-top: 10%;
 	text-align: center;
 }
 .info h2{
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	text-align: center;
 }
 #info1{
@@ -352,7 +391,7 @@ i{
 	float: left;
 	width: 40%;
 	margin-left: 10%;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	margin-top: 5%;
 	margin-bottom: 10%;
 	text-align: center;
@@ -361,7 +400,7 @@ i{
 	text-align: center;
 }
 #info1 h2{
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	text-align: center;
 }
 #contacto{
@@ -374,7 +413,7 @@ i{
 }
 #conta h1{
 	text-align: center;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	margin-bottom: 2%;
 }
 .mapotuer{
@@ -399,10 +438,10 @@ iframe{
 }
 form{
 	margin-left: 65%;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 form h3{
-	font-family:  "Alegreya Sans SC", sans-serif;
+	font-family:  "Roboto", sans-serif;
 }	
 input{
 	padding: 1%;
@@ -421,7 +460,7 @@ textarea{
 }
 #datos ul{
 	list-style: none;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.5em;
 }
 #datos ul li{
@@ -445,14 +484,14 @@ textarea{
 	color: white;
 }
 #pie h3{
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 #pie h4{
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 #pie p{
 	text-align: center;
-	font-family: "Alegreya Sans SC", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 footer i{
 	float: right;
