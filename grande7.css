@@ -69,7 +69,6 @@ ul{
 }
 #resumen{
 	margin-top: 10%;
-	background-image: url("inicio.webp");
 	display: block;
 	overflow: hidden;
 	background-position: center;
@@ -112,7 +111,7 @@ ul{
 .caption{
 	text-align: center;
 	font-family: "Roboto", sans-serif;
-	font-size: 1.25em;
+	font-size: 2em;
 	color: white;
 }
 #fondoexp{
@@ -136,24 +135,19 @@ ul{
 	clear: both;
 	
 }
-#fondoid{
-	margin-top: 15%;
-	background-image: url("Idiomas11.webp");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	clear: both;
+
+#res{
+  font-size: 15em;
+  text-align: center;
+  color: white;
+  margin-left: 45%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  transition: 0.5s;
 }
-#fondoinf{
-	margin-top: 15%;
-	background-image: url("Informática1.webp");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	clear: both;
-}	
+#res:hover{
+  color: #3677e0;
+}
 .exp h2{
 	font-family: "Roboto", sans-serif !important;
 	text-align: left;
@@ -225,16 +219,7 @@ ul{
 	text-align: center;
 	font-family: "Roboto", sans-serif !important;
 }
-#analisis{
-	background-image: url("equipamiento.webp");
-	display: block;
-	overflow: hidden;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	clear: both;
-}
+
 #img1{
 	margin-left: 37.6%;
 	clear: both;
@@ -325,39 +310,35 @@ ul{
 }
 #cont2{
 	display: block;
-	overflow: hidden;
-	transition: 0.5s;
 	font-family: "Roboto", sans-serif;
-	max-height: 0;
+	max-height: auto;
 }
 
-#doctorado{
-	margin-top: 15%;
-	width: 46%;
-	margin-left: 2%;
-	margin-bottom: 2%;
-}
-#analiticodoc{
-	width: 46%;
-	margin-left: 2%;
-	margin-bottom: 2%;
-}
-#doctorado:hover{
-	opacity: 0.5;
-}
-#analiticodoc:hover{
-	opacity: 0.5;
-}
-#analitico:hover{
-	opacity: 0.5;
-}
-#licenciatura:hover{
-	opacity: 0.5;
-}
+
+
+
 #idiomas{
 	clear: both;
 	padding-top: 10%;
 	width: 100%;
+}
+#ingles{
+  float: left;
+  color: white;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+#german{
+  float: left;
+  color: white;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+#spanish{
+  float: left;
+  color: white;
+  margin-left: 10%;
+  margin-bottom: 10%;
 }
 .lengua{
 	font-size: 1.5em;
