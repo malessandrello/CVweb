@@ -104,37 +104,14 @@ ul{
 	font-size: 4em;
 	font-weight: bold;
 }
-#fig1{
-  width: 35%;
-  height: auto;
-}
+
 .caption{
 	text-align: center;
 	font-family: "Roboto", sans-serif;
 	font-size: 2em;
 	color: white;
 }
-#fondoexp{
-	background-image: url("Experiencia1.webp");
-	display: block;
-	overflow: hidden;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	clear: both;
-}
-#form{
-	display: block;
-	overflow: hidden;
-	background-image: url("Formación1.webp");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	clear: both;
-	
-}
+
 
 #res{
   font-size: 15em;
@@ -170,13 +147,7 @@ ul{
 	float: right;
 	width: 10%;
 }
-.contraste{
-	background-color: #2f3942;
-	z-index: -1;
-	width: 100%;
-	padding-bottom: 15%;
-	padding-top: 10%;
-}	
+
 #exp0{
   margin-top: 2%;
   margin-bottom: 10%;
@@ -208,29 +179,8 @@ ul{
 	background-image: url("fig5.png");
 	padding: 25%;
 }
-.imagenes{
-	width: 25%;
-	float: left;
-}
-.imagenes img{
-	width: 100%;
-}
-.texto{
-	text-align: center;
-	font-family: "Roboto", sans-serif !important;
-}
 
-#img1{
-	margin-left: 37.6%;
-	clear: both;
-}
-#titulo1{
-	margin-top: 10%;
-	margin-bottom: 10%;
-	font-family: "Roboto", sans-serif !important;
-	font-size: 2.5em;
-	text-align: center;
-}	
+
 .exp{
 	display: block;
 	overflow: hidden;
@@ -250,71 +200,13 @@ ul{
 	color: white;
 	width: 50%;
 }
-#lic{
-	margin-left: 6.6%;
-	float: left;
-	width: 40%;
-	background-color: #7fb5f0;
-	cursor: pointer;
-	transition: 0.5s;
-	text-align: center;
-	border-radius: 20px;
-	margin-top: 10%;
-	margin-bottom: 10%;
-}
-#lic:hover{
-	background-color: #029DDB;
-}
-#lic h2{
-	text-align: center;
-	font-family: "Roboto", sans-serif;
-}
-#licenciatura{
-	margin-top: 15%;
-	width: 46%;
-	margin-left: 2%;
-	margin-bottom: 2%;
-}
-#analitico{
-	width: 46%;
-	margin-left: 2%;
-	margin-bottom: 2%;
-}
-#doc:hover{
-	background-color: #029DDB;
-}
 
-#cont1{
-	display: block;
-	overflow: hidden;
-	transition: 0.5s;
-	font-family: "Roboto", sans-serif;
-	max-height: 0;
-}
 
-#doc{
-	margin-right: 6.6%;
-	float: right;
-	width: 40%;
-	background-color: #7fb5f0;
-	cursor: pointer;
-	transition: 0.5s;
-	text-align: center;
-	border-radius: 20px;
-	margin-top: 10%;
-	margin-bottom: 10%;
-}
-#doc h2{
-	text-align: center;
-	font-family: "Roboto", sans-serif;
-}
 #cont2{
 	display: block;
 	font-family: "Roboto", sans-serif;
 	max-height: auto;
 }
-
-
 
 
 #idiomas{
@@ -340,50 +232,7 @@ ul{
   margin-left: 7.5%;
   margin-bottom: 10%;
 }
-.lengua{
-	font-size: 1.5em;
-	float: left;
-	width: 40%;
-	margin-left: 5%;
-	font-family: "Roboto", sans-serif;
-	margin-top: 10%;
-	text-align: center;
-	margin-bottom: 5%;
-}	
-.lengua h2{
-	font-family: "Roboto", sans-serif;
-	text-align: center;
-}
-.info{
-	font-size: 1.5em;
-	float: left;
-	width: 40%;
-	margin-left: 10%;
-	font-family: "Roboto", sans-serif;
-	margin-top: 10%;
-	text-align: center;
-}
-.info h2{
-	font-family: "Roboto", sans-serif;
-	text-align: center;
-}
-#info1{
-	font-size: 1.5em;
-	float: left;
-	width: 40%;
-	margin-left: 10%;
-	font-family: "Roboto", sans-serif;
-	margin-top: 5%;
-	margin-bottom: 10%;
-	text-align: center;
-}
-#info1 ul{
-	text-align: center;
-}
-#info1 h2{
-	font-family: "Roboto", sans-serif;
-	text-align: center;
-}
+
 #contacto{
 	padding-top: 10%;
 }
@@ -421,20 +270,8 @@ form{
 	margin-left: 65%;
 	font-family: "Roboto", sans-serif;
 }
-form h3{
-	font-family:  "Roboto", sans-serif;
-}	
-input{
-	padding: 1%;
-	margin-top: 2%!important;
-	margin-bottom: 2%!important;
-	width: 70%;
-}
-textarea{
-	margin-top: 2%!important;
-	width: 70%;
-	margin-bottom: 2%!important;
-}
+
+
 #datos{
 	width: 50%;
 	float: left;
@@ -447,16 +284,7 @@ textarea{
 #datos ul li{
 	padding: 2%;
 }
-#enviar{
-	text-decoration: none;
-	border: none;
-	background-color: #3677e0;
-	transition: 0.5s;
-	cursor: pointer;
-}
-#enviar:hover{
-	background-color: #77b9c9;
-}
+
 #pie{
 	clear: left;
 	margin-top: 40%;
