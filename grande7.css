@@ -106,10 +106,11 @@ ul{
 }
 
 .caption{
-	text-align: center;
+	text-align: left;
 	font-family: "Roboto", sans-serif;
 	font-size: 2em;
 	color: white;
+	margin: 5%;
 }
 
 
@@ -149,22 +150,19 @@ ul{
 }
 
 #exp0{
-  margin-top: 2%;
-  margin-bottom: 10%;
-	background-image: url("fig1.jpg");
-	padding: 25%;
+
+width: 50%;
+margin-bottom: 2%;
+float: left;
 }
 #exp1{
-	  margin-top: 2%;
-  margin-bottom: 10%;
-	background-image: url("fig2.png");
-	padding: 25%;
+width: 50%;
+margin-bottom: 2%;
+float: right;
 }
 #exp2{
-		  margin-top: 2%;
-  margin-bottom: 10%;
-	background-image: url("fig3.png");
-	padding: 25%;
+width: 50%;
+margin-bottom: 25%;
 }
 #exp3{
 		  margin-top: 2%;
