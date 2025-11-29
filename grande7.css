@@ -126,21 +126,7 @@ ul{
 #res:hover{
   color: #3677e0;
 }
-.exp h2{
-	font-family: "Roboto", sans-serif !important;
-	text-align: left;
-	padding-left: 1%;
-	width: 90%;
-	color: white;
-	
-}
-.exp h3{
-	font-family: "Roboto", sans-serif !important;
-	padding-left: 1%;
-	width: 90%;
-	color: white;
-	margin-bottom: 5%;
-}
+
 .imagen{
 	margin-top: 1%;
 	margin-bottom: 1%;
@@ -149,56 +135,31 @@ ul{
 	width: 10%;
 }
 
-#exp0{
+.fig-port{
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 10%;
 
-width: 50%;
-margin-bottom: 2%;
-float: left;
+display: block;
+float:left;
+}
+#exp0{
+width: 100%;
 }
 #exp1{
-width: 50%;
-margin-bottom: 2%;
-float: right;
+width: 100%;
 }
 #exp2{
-width: 50%;
-margin-bottom: 25%;
+width: 100%;
 }
 #exp3{
-		  margin-top: 2%;
-  margin-bottom: 10%;
-	background-image: url("fig4.png");
-	padding: 25%;
+width: 100%;
 }
 
 #exp4{
-		  margin-top: 2%;
-  margin-bottom: 10%;
-	background-image: url("fig5.png");
-	padding: 25%;
+width: 100%;
 }
-
-
-.exp{
-	display: block;
-	overflow: hidden;
-	height: 30%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	clear: both;
-	margin-top: 0%;
-}
-
-.exp p{
-	font-family: "Roboto", sans-serif;
-	font-size: 1.5em;
-	padding: 0.5%;
-	color: white;
-	width: 50%;
-}
-
 
 #cont2{
 	display: block;
@@ -265,7 +226,7 @@ iframe{
 	border: none;
 }
 form{
-	margin-left: 65%;
+	margin: 30%;
 	font-family: "Roboto", sans-serif;
 }
 
