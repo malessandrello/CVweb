@@ -27,7 +27,7 @@
 <nav>
 <a href = "#resumen"><i class = "fas fa-grin"></i>About me</a>
 <a href = "#experiencia"><i class = "fas fa-briefcase"></i>Portfolio</a>
-<a href = "#form"><i class = "fas fa-file-alt"></i>Resume</a>
+<a href = "#forma"><i class = "fas fa-file-alt"></i>Resume</a>
 <a href = "#idiomas"><i class = "fas fa-language"></i>Languages</a>
 <a href = "#conta"><i class = "fas fa-envelope"></i>Contact</a>
 <button id="botonabrir" class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i></button>
@@ -38,7 +38,7 @@
 <i class="fa fa-close"></i>
 </a>
 <div>
-<a class = "vinculo" href = "#acerca" onclick="closeNav()"><i class = "fas fa-grin"></i>About me</a>
+<a class = "vinculo" href = "#resumen" onclick="closeNav()"><i class = "fas fa-grin"></i>About me</a>
 <a class = "vinculo" href = "#experiencia" onclick="closeNav()"><i class = "fas fa-briefcase"></i>Portfolio</a>
 <a class = "vinculo" href = "#forma" onclick="closeNav()"><i class = "fas fa-file-alt"></i>Resume</a>
 <a class = "vinculo" href = "#idiomas" onclick="closeNav()"><i class = "fas fa-language"></i>Languages</a>
@@ -47,7 +47,6 @@
 </div>
 <main>
 <section id = "resumen">
-
 <div id = "acerca">
 <h1 id = "seccion1">About me</h1>
 <p>I'm Mauricio, a data analyst based in Neuquen, Argentina. </p>
@@ -62,58 +61,59 @@
 </div>
 </section>
 
-<section>
+<section id = "port">
 <div id = "fondoexp">
 <h1 class = "titulo" id = "experiencia">Portfolio</h1>
 </div>
 
 <div class = fig-port>
-<p class = "caption"> A Shiny Application for Data Visualization.</p>
+<h1 class = "caption"> A Shiny Application for Data Visualization.</h1>
 <a href="https://mauricio-alessandrello.com/appdatos">
-<img id = "exp0" src = "fig1.jpg"/>
+<img class = "exp1" src = "fig1.jpg"/>
 </a>
 </div>
 
 <div class = fig-port>  
-<p class = "caption"> A Dashboard of KPIs.</p>
+<h1 class = "caption"> A Dashboard of KPIs.</h1>
 <a href = "https://appste.shinyapps.io/reporte/">
-<img id = "exp1" src = "fig2.png">
+<img class = "exp1" src = "fig2.png"/>
 </a>
 </div>
 
 <div class = fig-port> 
-<p class = "caption"> An Application for Automatic Data Analysis.</p>
+<h1 class = "caption"> An Application for Automatic Data Analysis.</h1>
 <a href = "https://appbuttons.shinyapps.io/appBttnSonda/">
-<img id = "exp2" src = "fig3.png">
+<img class = "exp1" src = "fig3.png"/>
 </a>
 </div>
 
 <div class = fig-port>
-<p class = "caption"> Data Analysis and Modeling of a Longitudinal Study. A Quarto Report.</p>
+<h1 class = "caption"> Data Analysis and Modeling of a Longitudinal Study. A Quarto Report.</h1>
 <a href = "https://mauricio-alessandrello.com/longitudinal_analysis">
-<img id = "exp3" src = "fig4.png">
+<img class = "exp1" src = "fig4.png"/>
 </a>
 </div>
 
 <div class = fig-port>
-<p class = "caption"> Data Analysis of oil polluted soils. A Qaurto Report.</p>
+<h1 class = "caption"> Data Analysis of oil polluted soils. A Qaurto Report.</h1>
 <a href = "https://mauricio-alessandrello.com/data">
-<img id = "exp4" src = "fig5.png">
+<img class = "exp1" src = "fig5.png"/>
 </a>
 </div>
 </section>
 
-<section id = "formación">
+<section id = "formacion">
 <div id = "form">
 <h1 class = "titulo" id = "forma">Resume</h1>
 </div>
+
 <div id="cont2">
 <a target="_blank" href="Resume.pdf"><i id = "res" class = "fas fa-file-alt"></i></a>
 </div>
 </section>
+
 <section>
 <div>
-
 <h1 class = "titulo" id = "idiomas">Languages</h1>
 </div>
 <div id = "ingles">
@@ -135,8 +135,8 @@
   <source src="spanish.mp4" type="video/mp4" />
 </video>  
 </div>
-
 </section>
+
 <section>
 <div id = "conta">
 <h1 id = "contacto">Contact</h1>

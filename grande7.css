@@ -17,6 +17,7 @@ header{
 	position: fixed;
 	top: 0%;
 	background-color: white;
+	z-index: 30;
 }
 .openbtn{
 	display: none;
@@ -47,6 +48,7 @@ nav{
 	font-size: 1.5em;
 	float: left;
 	background-color: black;
+	z-index: 3;
 }
 nav a{
 	margin-left: 3%;
@@ -106,13 +108,12 @@ ul{
 }
 
 .caption{
-	text-align: left;
+	text-align: center;
 	font-family: "Roboto", sans-serif;
 	font-size: 2em;
 	color: white;
 	margin: 5%;
 }
-
 
 #res{
   font-size: 15em;
@@ -140,27 +141,32 @@ width: 80%;
 margin-left: 10%;
 margin-right: 10%;
 margin-bottom: 10%;
-
 display: block;
-float:left;
-}
-#exp0{
-width: 100%;
-}
-#exp1{
-width: 100%;
-}
-#exp2{
-width: 100%;
-}
-#exp3{
-width: 100%;
+float: left;
+
 }
 
-#exp4{
+.exp1{
 width: 100%;
+transition: 0.5s;
+opacity: 0.5;
 }
 
+
+
+.exp1:hover{
+  opacity: 1;
+  z-index: 2;
+}
+
+#form{
+  display: inline-block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
 #cont2{
 	display: block;
 	font-family: "Roboto", sans-serif;
@@ -178,18 +184,21 @@ width: 100%;
   color: white;
   margin-left: 7.5%;
   margin-bottom: 10%;
+  z-index: 1;
 }
 #german{
   float: left;
   color: white;
   margin-left: 7.5%;
   margin-bottom: 10%;
+  z-index: 1;
 }
 #spanish{
   float: left;
   color: white;
   margin-left: 7.5%;
   margin-bottom: 10%;
+  z-index: 1;
 }
 
 #contacto{
@@ -225,10 +234,7 @@ iframe{
 	z-index: -1;
 	border: none;
 }
-form{
-	margin: 30%;
-	font-family: "Roboto", sans-serif;
-}
+
 
 
 #datos{
