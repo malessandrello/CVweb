@@ -194,6 +194,18 @@ ul{
 
 }
 
+.fig-port5 a {
+  display: block;
+  width: 100%;
+  height: 500px;
+  text-decoration: none;
+  background-image: url('appreact.png');
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+
 .fondo {
   top: 0;
   left: 0;
@@ -222,6 +234,10 @@ ul{
 }
 
 .fig-port4:hover .fondo {
+  opacity: 1;
+}
+
+.fig-port5:hover .fondo {
   opacity: 1;
 }
 

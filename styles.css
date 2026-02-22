@@ -205,7 +205,8 @@ ul {
 .fig-port1 a,
 .fig-port2 a,
 .fig-port3 a,
-.fig-port4 a {
+.fig-port4 a,
+.fig-port5 a {
 	display: block;
 	text-decoration: none;
 }
@@ -533,16 +534,19 @@ footer i:hover {
 	.fig-port1 a,
 	.fig-port2 a,
 	.fig-port3 a,
-	.fig-port4 a {
+	.fig-port4 a,
+	.fig-port5 a{
 		height: 500px;
 		background-position: center;
 		background-repeat: no-repeat;
+		background-size: 90% auto;
 	}
 
 	.fig-port1 a { background-image: url('fig1.jpg'); }
 	.fig-port2 a { background-image: url('fig2.png'); }
 	.fig-port3 a { background-image: url('fig3.png'); }
 	.fig-port4 a { background-image: url('image31.png'); }
+	.fig-port5 a { background-image: url('appreact.png'); }
 
 	/* Overlay: hidden by default, revealed on hover */
 	.fondo {
@@ -556,7 +560,8 @@ footer i:hover {
 	.fig-port1:hover .fondo,
 	.fig-port2:hover .fondo,
 	.fig-port3:hover .fondo,
-	.fig-port4:hover .fondo {
+	.fig-port4:hover .fondo,
+	.fig-port5:hover .fondo {
 		opacity: 1;
 	}
 
