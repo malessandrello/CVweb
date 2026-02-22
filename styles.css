@@ -2,6 +2,7 @@
    styles.css — unified responsive stylesheet
    Breakpoints (mobile-first):
      base     : < 590px    (mobile)
+     max-390  : ≤ 390px    (small phones)
      min-590  : 590–949px  (small tablet)
      min-950  : 950–1179px (tablet / laptop)
      min-1180 : 1180px+    (desktop)
@@ -209,7 +210,7 @@ ul {
 .fig-port5 a {
 	display: block;
 	text-decoration: none;
-	height: 250px;
+	min-height: 250px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
@@ -224,7 +225,7 @@ ul {
 /* Overlay panel: always visible on mobile, hover-only on desktop */
 .fondo {
 	width: 100%;
-	height: 100%;
+	min-height: 250px;
 	background-color: rgba(0, 0, 0, 0.7);
 	color: white;
 	display: flex;
@@ -406,6 +407,69 @@ footer i {
 
 footer i:hover {
 	color: #3677e0;
+}
+
+
+/* =================================================================
+   max-390px — small phones (320–390px)
+   ================================================================= */
+@media (max-width: 390px) {
+	header div {
+		font-size: 1.6em;
+	}
+
+	#acerca h1 {
+		padding-top: 55%;
+		font-size: 1.6em;
+	}
+
+	#acerca p {
+		font-size: 1em;
+	}
+
+	ul {
+		font-size: 1em;
+	}
+
+	.titulo {
+		font-size: 2.5em;
+		padding-top: 40%;
+	}
+
+	.caption {
+		font-size: 1.4em;
+	}
+
+	.fondo p {
+		font-size: 1em;
+		width: 90%;
+	}
+
+	#res {
+		font-size: 10em;
+		margin-left: 25%;
+	}
+
+	#idiomas {
+		padding-top: 40%;
+	}
+
+	#contacto {
+		padding-top: 40%;
+	}
+
+	#datos {
+		width: 100%;
+		float: none;
+	}
+
+	#datos ul {
+		font-size: 1.1em;
+	}
+
+	footer i {
+		font-size: 3em;
+	}
 }
 
 
