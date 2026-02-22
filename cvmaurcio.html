@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta name="googlebot" content = "index, follow"/>
 <meta name="robots" content="index, follow" />
@@ -8,10 +8,7 @@
 <meta name = "keywords" content = "Mauricio Alessandrello, data analyst, R, shiny apps, biotechnology, machine learning"/>
 <meta name = "author" content = "mauricio-alessandrello.com"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-<link href="grande7.css" rel="stylesheet" media="screen and (min-width: 1180px)"/>
-<link href="mediano7.css" rel="stylesheet" media="screen and (min-width: 950px) and (max-width: 1179px)"/>
-<link href="chico7.css" rel="stylesheet" media="screen and (min-width: 590px) and (max-width: 949px)"/>
-<link href="extrachico7.css" rel="stylesheet" media="screen and (max-width: 589px)"/>
+<link href="styles.css" rel="stylesheet"/>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
 <link href="https://fonts.googleapis.com/css?family=Merienda|Alegreya+Sans+SC|Allerta+Stencil|Gugi|Iceland|Michroma|Monofett|Orbitron|Saira+Stencil+One&display=swap" rel="stylesheet"/>
 <link rel = "canonical" href = "https://mauricio-alessandrello.com"/>
@@ -19,7 +16,6 @@
 <script src="https://kit.fontawesome.com/eaab8d6b49.js" crossorigin="anonymous"></script>
 <script src="funciones.js"></script>
 <title> Mauricio Alessandrello</title>
-<link rel = "shortcut icon" href = "foto2.png"  type="image/x-icon"/>
 <link rel="icon" href="foto2.png" type="image/x-icon">
 </head>
 <body onscroll = "encabezado()">
@@ -50,14 +46,14 @@
 <div id = "acerca">
 <h1 id = "seccion1">About me</h1>
 <p>I'm Mauricio, a data analyst based in Neuquen, Argentina. </p>
-<p>I really enjoy solving complex analytical problems. Here are some of the problems I've solved throughout my carreer:</p>
+<p>I really enjoy solving complex analytical problems. Here are some of the problems I've solved throughout my career:</p>
 <ul>
   <li> Increased productivity by automatizing data analysis.</li>
   <li> Supported decision-making by delivering clean, insightful data visualizations.</li>
-  <li> Improved communicaton by writing concise yet informative reports that are both visually appealing and interactive.</li>
-  <li> Developed a machine learnign tool to reduce the error rate of analytical results.</li>
+  <li> Improved communication by writing concise yet informative reports that are both visually appealing and interactive.</li>
+  <li> Developed a machine learning tool to reduce the error rate of analytical results.</li>
 </ul>
-<p> Do you have any challenges like these? I'd happy to help!</p>
+<p> Do you have any challenges like these? I'd be happy to help!</p>
 </div>
 </section>
 
@@ -79,11 +75,11 @@ Note: This application is deployed via Shinylive, which runs entirely in your br
 </div>
 </a>
 </div>
-<p style="color: white; padding-left: 2%;"> <a href="https://mauricio-alessandrello.com/appdatos">Explore the methodology and stages behind the development of this application.</a></p>
+<p style="color: white; padding-left: 2%;"> <a href="https://mauricio-alessandrello.com/report1">Explore the methodology and stages behind the development of this application.</a></p>
 <hr/>
   
 <h1 class = "caption"> A Dashboard of KPIs.</h1>
-<div class = fig-port2>
+<div class = "fig-port2">
 <a href = "https://appste.shinyapps.io/reporte/">
   <div class = "fondo">
 <p>This app features a comprehensive KPI dashboard designed for laboratory management.
@@ -93,11 +89,11 @@ Its intuitive navigation ensures users can pinpoint critical information with mi
 </div>
 </a>
 </div>
-<p style="color: white; padding-left: 2%;"> <a href="https://mauricio-alessandrello.com/appdatos">Explore the methodology and stages behind the development of this application.</a></p>
+<p style="color: white; padding-left: 2%;"> <a href="https://mauricio-alessandrello.com/report2">Explore the methodology and stages behind the development of this application.</a></p>
 <hr/>
 
 <h1 class = "caption"> An Application for Automatic Data Analysis.</h1>
-<div class = fig-port3> 
+<div class = "fig-port3"> 
 <a href = "https://appbuttons.shinyapps.io/appBttnSonda/">
     <div class = "fondo">
 <p>This application is specifically designed to analyze microbial culture incubator data.
@@ -111,7 +107,7 @@ Integrated value boxes and data tables enable the rapid identification of non-co
 <hr/>
 
 <h1 class = "caption"> Shiny app for searching Airbnb apartments in Buenos Aires</h1>
-<div class = fig-port4>
+<div class = "fig-port4">
 <a href = "https://mauricio-alessandrello.com/longitudinal_analysis">
     <div class = "fondo">
 <p>This application enables rapid searching and analysis of Airbnb listings in Buenos Aires.
@@ -121,15 +117,9 @@ Integrated sliders and dropdown controllers provide precise data filtering, whil
 </div>
 </a>
 </div>
-<p style="color: white; padding-left: 2%;"> <a href="https://mauricio-alessandrello.com/appdatos">Explore the methodology and stages behind the development of this application.</a></p>
+<p style="color: white; padding-left: 2%;"> <a href="https://mauricio-alessandrello.com/report3">Explore the methodology and stages behind the development of this application.</a></p>
 <hr/>
 
-<div class = fig-port>
-<h1 class = "caption"> Data Analysis of oil polluted soils. A Qaurto Report.</h1>
-<a href = "https://mauricio-alessandrello.com/data">
-<img class = "exp1" src = "fig5.png"/>
-</a>
-</div>
 </section>
 
 
@@ -150,20 +140,20 @@ Integrated sliders and dropdown controllers provide precise data filtering, whil
 </div>
 <div id = "ingles">
   <h2>English</h2>
-<video id = english width="320" height="240" controls>
+<video id="english" width="320" height="240" controls>
   <source src="english.mp4" type="video/mp4" />
 </video>  
 </div>
 <div id = "german">
 <h2>German</h2>
-<video id = deutsch width="320" height="240" controls>
+<video id="deutsch" width="320" height="240" controls>
   <source src="deutsch.mp4" type="video/mp4" />
 </video>  
 </div>
 
 <div id = "spanish">
 <h2>Spanish</h2>  
-<video id = español width="320" height="240" controls>
+<video id="español" width="320" height="240" controls>
   <source src="spanish.mp4" type="video/mp4" />
 </video>  
 </div>
@@ -174,7 +164,7 @@ Integrated sliders and dropdown controllers provide precise data filtering, whil
 <h1 id = "contacto">Contact</h1>
 <div id = "datos">
 <ul>
-<li><i class="fa fa-home"></i>República de Italia 151, Neuquén, Neuquén</li>
+<li><i class="fa fa-home"></i> Neuquén, Argentina</li>
 <li><i class="fa fa-envelope"></i> mauricio.alessandrello@gmail.com</li>
 <li><i class = "fa fa-phone"></i> 54 299 6343765</li>
 </ul>

@@ -1,0 +1,584 @@
+/* =================================================================
+   styles.css — unified responsive stylesheet
+   Breakpoints (mobile-first):
+     base     : < 590px    (mobile)
+     min-590  : 590–949px  (small tablet)
+     min-950  : 950–1179px (tablet / laptop)
+     min-1180 : 1180px+    (desktop)
+   ================================================================= */
+
+/* ----- Reset & box model ----- */
+* {
+	box-sizing: border-box;
+}
+
+/* ----- Body ----- */
+body {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	background: #16191c;
+}
+
+/* ----- Header ----- */
+header {
+	margin-left: 0;
+	padding: 0;
+	width: 100%;
+	display: block;
+	font-family: "Gugi", sans-serif;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	z-index: 30;
+}
+
+header div {
+	float: left;
+	margin-top: 1%;
+	padding-left: 2%;
+	width: 85%;
+	color: black;
+	font-size: 2.5em;
+	transition: 0.5s;
+}
+
+img {
+	width: 10%;
+	height: auto;
+	float: left;
+	transition: 0.5s;
+}
+
+/* ----- Navigation ----- */
+nav {
+	float: left;
+	width: 100%;
+	color: white;
+	font-size: 1.5em;
+	background-color: black;
+	z-index: 3;
+}
+
+nav a {
+	display: none;
+}
+
+a:hover {
+	color: #3677e0;
+}
+
+i {
+	padding: 1%;
+}
+
+/* ----- Hamburger button & sidebar (mobile / small screens) ----- */
+.openbtn {
+	border: none;
+	background-color: black;
+	font-size: 1em;
+	color: white;
+	float: right;
+	cursor: pointer;
+	width: 10%;
+	padding: 1%;
+	padding-left: 0;
+	transition: 0.5s;
+}
+
+.openbtn:hover {
+	color: #3677e0;
+}
+
+.barra1 {
+	height: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 31;
+	top: 0;
+	left: 0;
+	background-color: black;
+	overflow-x: hidden;
+	padding: 0;
+	transition: 0.5s;
+}
+
+.barra1 .vinculo {
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 2em;
+	padding: 3%;
+	width: 100%;
+	display: block;
+	margin-top: 10%;
+	text-align: center;
+	color: white;
+	transition: 0.5s;
+}
+
+.barra1 .vinculo:hover {
+	color: #3677e0;
+}
+
+.cerrar {
+	position: absolute;
+	top: 0;
+	right: 5%;
+	font-size: 2em;
+	color: white;
+	z-index: 32;
+	transition: 0.5s;
+}
+
+.cerrar:hover {
+	color: #3677e0;
+}
+
+/* ----- About section ----- */
+ul {
+	padding-left: 1%;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.3em;
+}
+
+#resumen {
+	margin-top: 15%;
+	display: block;
+	overflow: hidden;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-attachment: fixed intentionally omitted — broken on iOS Safari */
+	clear: both;
+	padding-bottom: 15%;
+	padding-top: 10%;
+}
+
+#acerca {
+	color: white;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#acerca h1 {
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	padding-top: 45%;
+}
+
+#acerca p {
+	padding-left: 1%;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.25em;
+}
+
+/* ----- Section titles ----- */
+.titulo {
+	padding-top: 35%;
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.caption {
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 2em;
+	color: white;
+}
+
+/* ----- Portfolio ----- */
+.fig-port {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 10%;
+	display: block;
+	float: left;
+}
+
+/* Portfolio card links — background images added at 1180px+ */
+.fig-port1 a,
+.fig-port2 a,
+.fig-port3 a,
+.fig-port4 a {
+	display: block;
+	text-decoration: none;
+}
+
+/* Overlay panel: always visible on mobile, hover-only on desktop */
+.fondo {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+}
+
+.fondo p {
+	width: 80%;
+	font-size: 1.5em;
+}
+
+/* Static report image (last portfolio item) */
+.exp1 {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: 0.5s;
+	opacity: 0.5;
+}
+
+.exp1:hover {
+	opacity: 1;
+	z-index: 2;
+}
+
+.imagen {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-right: 5%;
+	float: right;
+	width: 10%;
+}
+
+/* ----- Resume ----- */
+#form {
+	display: inline-block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cont2 {
+	display: block;
+	font-family: "Roboto", sans-serif;
+}
+
+#res {
+	font-size: 15em;
+	text-align: center;
+	color: white;
+	margin-left: 30%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	transition: 0.5s;
+}
+
+#res:hover {
+	color: #3677e0;
+}
+
+/* ----- Languages ----- */
+#idiomas {
+	clear: both;
+	padding-top: 35%;
+	width: 100%;
+}
+
+#ingles {
+	text-align: center;
+	display: block;
+	color: white;
+	margin-bottom: 10%;
+}
+
+#german {
+	text-align: center;
+	display: block;
+	color: white;
+	margin-bottom: 10%;
+}
+
+#spanish {
+	text-align: center;
+	display: block;
+	color: white;
+	margin-bottom: 10%;
+}
+
+/* ----- Contact ----- */
+#contacto {
+	padding-top: 35%;
+}
+
+#conta {
+	background-color: #a8a7a5;
+	width: 100%;
+	float: left;
+}
+
+#conta h1 {
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	margin-bottom: 2%;
+}
+
+.mapouter {
+	text-align: right;
+	height: auto;
+	width: 100%;
+}
+
+.gmap_canvas {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	background: none !important;
+}
+
+iframe {
+	margin-top: 5%;
+	float: left;
+	height: auto;
+	width: 100%;
+	z-index: -1;
+	border: none;
+}
+
+form {
+	margin-left: 65%;
+	font-family: "Roboto", sans-serif;
+}
+
+#datos {
+	width: 50%;
+	float: left;
+}
+
+#datos ul {
+	list-style: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5em;
+}
+
+#datos ul li {
+	padding: 2%;
+}
+
+/* ----- Footer ----- */
+#pie {
+	clear: left;
+	margin-top: 40%;
+	padding: 2%;
+	background-color: #181818;
+	color: white;
+}
+
+#pie h3 {
+	font-family: "Roboto", sans-serif;
+}
+
+#pie h4 {
+	font-family: "Roboto", sans-serif;
+}
+
+#pie p {
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+}
+
+footer i {
+	float: right;
+	color: white;
+	transition: 0.5s;
+	cursor: pointer;
+	font-size: 4em;
+}
+
+footer i:hover {
+	color: #3677e0;
+}
+
+
+/* =================================================================
+   590px+ — small tablet (formerly chico7.css)
+   ================================================================= */
+@media (min-width: 590px) {
+	#acerca h1 {
+		padding-top: 25%;
+	}
+
+	.titulo {
+		padding-top: 25%;
+	}
+
+	#res {
+		margin-left: 35%;
+	}
+
+	#idiomas {
+		padding-top: 25%;
+	}
+
+	#contacto {
+		padding-top: 25%;
+	}
+}
+
+
+/* =================================================================
+   950px+ — tablet / laptop (formerly mediano7.css)
+   ================================================================= */
+@media (min-width: 950px) {
+	/* Switch from hamburger to full nav bar */
+	nav a {
+		margin-left: 0.3%;
+		font-family: "Roboto", sans-serif;
+		padding: 2%;
+		display: inline;
+		text-decoration: none;
+		transition: 0.5s;
+	}
+
+	.openbtn {
+		display: none;
+	}
+
+	.barra1 {
+		display: none;
+	}
+
+	/* Header sizing */
+	header div {
+		margin-top: 3%;
+		width: 88%;
+		font-size: 4em;
+	}
+
+	img {
+		margin-left: 2%;
+	}
+
+	/* Reduce top spacing — header is relatively smaller here */
+	#resumen {
+		margin-top: 10%;
+	}
+
+	#acerca {
+		padding-top: 5%;
+	}
+
+	#acerca h1 {
+		padding-top: 0;
+	}
+
+	.titulo {
+		padding-top: 10%;
+	}
+
+	#res {
+		margin-left: 45%;
+	}
+
+	/* Language videos side by side */
+	#idiomas {
+		padding-top: 10%;
+	}
+
+	#ingles {
+		float: left;
+		display: block;
+		text-align: left;
+		margin-left: 15%;
+	}
+
+	#german {
+		float: left;
+		display: block;
+		text-align: left;
+		margin-left: 15%;
+	}
+
+	#spanish {
+		float: left;
+		display: block;
+		text-align: left;
+		margin-left: 37%;
+	}
+
+	#contacto {
+		padding-top: 10%;
+	}
+}
+
+
+/* =================================================================
+   1180px+ — desktop (formerly grande7.css)
+   ================================================================= */
+@media (min-width: 1180px) {
+	header {
+		font-family: "Michroma", sans-serif;
+	}
+
+	img {
+		margin-left: 0;
+	}
+
+	nav a {
+		margin-left: 3%;
+	}
+
+	.caption {
+		margin: 5%;
+	}
+
+	/* Portfolio image cards */
+	.fig-port1 a,
+	.fig-port2 a,
+	.fig-port3 a,
+	.fig-port4 a {
+		height: 500px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.fig-port1 a { background-image: url('fig1.jpg'); }
+	.fig-port2 a { background-image: url('fig2.png'); }
+	.fig-port3 a { background-image: url('fig3.png'); }
+	.fig-port4 a { background-image: url('image31.png'); }
+
+	/* Overlay: hidden by default, revealed on hover */
+	.fondo {
+		height: 100%;
+		padding: 0;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.4s ease;
+	}
+
+	.fig-port1:hover .fondo,
+	.fig-port2:hover .fondo,
+	.fig-port3:hover .fondo,
+	.fig-port4:hover .fondo {
+		opacity: 1;
+	}
+
+	/* Static report image: centered, full opacity */
+	.exp1 {
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+		opacity: 1;
+		transition: transform 0.5s ease;
+	}
+
+	/* Language videos: equal left margin */
+	#ingles {
+		margin-left: 7.5%;
+	}
+
+	#german {
+		margin-left: 7.5%;
+	}
+
+	#spanish {
+		margin-left: 7.5%;
+	}
+}
