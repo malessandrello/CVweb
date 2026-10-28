@@ -1,34 +1,24 @@
-function encabezado() {
-	if (window.innerWidth > 590) {
-		if (window.scrollY >= document.getElementById("encabezado").offsetTop) {
-			document.getElementById("encabezado").style.fontSize = "2em";
-			document.getElementById("encabezado").style.marginTop = "1.5%";
-			document.getElementById("imagen").style.width = "5%";
-		} else {
-			if (window.innerWidth > 950) {
-				document.getElementById("encabezado").style.fontSize = "4em";
-				document.getElementById("encabezado").style.marginTop = "3%";
-				document.getElementById("imagen").style.width = "10%";
-			} else {
-				document.getElementById("encabezado").style.fontSize = "2.5em";
-				document.getElementById("imagen").style.width = "10%";
-			}
-		}
+document.addEventListener("DOMContentLoaded", function () {
+	var bar = document.getElementById("top-bar");
+	var btn = document.getElementById("menu-btn");
+	var menu = document.getElementById("menu");
+
+	// Shadow on the top bar once the page scrolls
+	function onScroll() {
+		bar.classList.toggle("scrolled", window.scrollY > 10);
 	}
-}
+	window.addEventListener("scroll", onScroll, { passive: true });
+	onScroll();
 
-function mostrar6() {
-	if (document.getElementById("cont2").style.maxHeight) {
-		document.getElementById("cont2").style.maxHeight = null;
-	} else {
-		document.getElementById("cont2").style.maxHeight = document.getElementById("cont2").scrollHeight + "px";
-	}
-}
-
-function openNav() {
-	document.getElementById("barralateral").style.height = "100%";
-}
-
-function closeNav() {
-	document.getElementById("barralateral").style.height = "0";
-}
+	// Mobile menu
+	btn.addEventListener("click", function () {
+		var open = menu.classList.toggle("open");
+		btn.setAttribute("aria-expanded", open);
+	});
+	menu.querySelectorAll("a").forEach(function (a) {
+		a.addEventListener("click", function () {
+			menu.classList.remove("open");
+			btn.setAttribute("aria-expanded", false);
+		});
+	});
+});
