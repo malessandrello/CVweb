@@ -21,4 +21,31 @@ document.addEventListener("DOMContentLoaded", function () {
 			btn.setAttribute("aria-expanded", false);
 		});
 	});
+
+	// Copy email: works even when the visitor has no mail app for "mailto:" links
+	var copy = document.getElementById("copy-email");
+	if (copy) {
+		var label = copy.querySelector("span");
+		copy.addEventListener("click", function () {
+			var email = copy.dataset.email;
+			function done(ok) {
+				label.textContent = ok ? "Copied!" : email;
+				setTimeout(function () { label.textContent = "Copy email"; }, 2500);
+			}
+			if (navigator.clipboard && window.isSecureContext) {
+				navigator.clipboard.writeText(email).then(function () { done(true); }, function () { done(false); });
+			} else {
+				var t = document.createElement("textarea");
+				t.value = email;
+				t.style.position = "fixed";
+				t.style.opacity = "0";
+				document.body.appendChild(t);
+				t.select();
+				var ok = false;
+				try { ok = document.execCommand("copy"); } catch (e) {}
+				document.body.removeChild(t);
+				done(ok);
+			}
+		});
+	}
 });

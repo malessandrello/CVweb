@@ -422,6 +422,20 @@ h1, h2, h3 {
 	margin: 0 auto 32px;
 }
 
+.contact-actions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 12px;
+}
+
+.contact-actions button {
+	background: transparent;
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+}
+
 .contact-list {
 	list-style: none;
 	padding: 0;
